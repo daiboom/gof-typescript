@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediator</title>
+    <style>
+        .home {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .home div {
+            border: 2px solid  black;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 1rem;
+            background-color: #344953;
+            color: white;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .home .highlighting {
+            background-color: #f9a825;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <div class="door"></div>
+        <div class="window"></div>
+        <div class="heatboiler"></div>
+        <div class="coolaircon"></div>
+    </div>
+</body>
+<script type="module" src="../src/mediator/index.ts"></script>
+
+
+</html>

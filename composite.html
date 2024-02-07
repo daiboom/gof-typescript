@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composite</title>
+    <style>
+        .unit{
+            font-size: 2rem;
+            padding-left: 2.3rem;
+            background-image: url(/images/file.svg);
+            background-repeat: no-repeat ;
+            background-size: 2rem;
+            background-position: left 0.5rem;
+            font-weight: normal;
+        }
+
+        .folder{
+            background-image: url(/images/folder.svg);
+            font-weight: bold;
+        }
+
+        .unit span:nth-child(2){
+            color: gray;
+            margin-left:0.4rem;
+            font-size: 1.3rem
+        }
+    </style>
+</head>
+
+<body>
+   <div id="list"></div>
+</body>
+<script type="module" src="../src/composite/index.ts"></script>
+
+
+</html>

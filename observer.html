@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observer</title>
+    <style>
+        .dice {
+      width: 10rem;
+      height: 10rem;
+      background-color: black;
+      color: yellow;
+      font-size: 7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center
+        }
+
+        button {
+            font-size: 2rem;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        .players {
+            margin-top: 0.5rem;
+            display: flex;
+            gap:0.2rem
+        }
+
+        .players div {
+            width: 8rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-color: gray;
+            color: white;
+            border: 1px solid black;
+        }
+
+         .players div.win {
+            background-color: yellow;
+            color: black;
+         }
+        </style>
+</head>
+
+<body>
+   <div class="dice">?</div>
+   <button>굴리기</button>
+   <div class="players">
+
+   </div>
+</body>
+<script type="module" src="../src/observer/index.ts"></script>
+
+
+</html>

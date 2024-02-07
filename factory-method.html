@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Method</title>
+    <style>
+        body {
+            margin: 1em;
+        }
+        
+        .items {
+            display: flex;
+        
+        }
+
+        button {
+            padding: 1em;
+            font-size: 1em;
+            flex-grow: 1;
+        }
+
+        textarea {
+            margin-top: 0.5em;
+            border: 1px dotted gray;
+            width: 100%;
+            height: 300px;
+            box-sizing: border-box;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="items">
+            <button>sword</button><button>shield</button><button>bow</button>
+        </div>
+        <textarea id="description" cols="30" rows="10">
+        전투가 시작되었다....
+    </textarea>
+    </div>
+</body>
+<script type="module" src="../src/factory-method/index.ts"></script>
+
+
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+    </div>
+    <script type="module" src="./main.ts"></script>
+    <script>
+      const urls = [
+        'iterator',
+        'strategy',
+        'template-method',
+        'adapter',
+        'bridge',
+        'decorator',
+        'signleton',
+        'flyweight',
+        'composite',
+        'metiator',
+        'state',
+        'interpreter', 
+        'visitor',
+        
+      ]
+
+      urls.map(url => {
+        const div = document.createElement('div')
+        const a = document.createElement('a')
+        a.href = `/${url}.html`
+        a.textContent = url
+        div.appendChild(a)
+        document.getElementById('app').appendChild(div)
+      })
+    </script>
+  </body>
+</html>
